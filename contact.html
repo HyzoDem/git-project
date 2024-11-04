@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Page</title>
+    <style>
+		/* Add your CSS styles here */
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f2f2f2;
+		}
+		
+		.container {
+			max-width: 500px;
+			margin: 40px auto;
+			padding: 20px;
+			background-color: #fff;
+			border: 1px solid #ddd;
+			border-radius: 10px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+		}
+		
+		h1 {
+			color: #333;
+		}
+        label {
+			display: block;
+			margin-bottom: 10px;
+		}
+		
+		input[type="text"], input[type="email"], textarea {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 20px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		
+		input[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+
+	<link href="(link unavailable)" rel="stylesheet" integrity="sha384-1BmE5+3tr/wKE6eKNJS5xWnHPp0YP3zpFsJ" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container mt-5">
+		<h1 class="text-center mb-4">Contact Us</h1>
+		<p class="text-center mb-4">Please reach out to us using the form below.</p>
+		
+		<form action="/submit-contact" method="POST" class="needs-validation" novalidate>
+			<div class="mb-3">
+				<label for="name" class="form-label">Name:</label>
+				<input type="text" id="name" name="name" class="form-control" required>
+				<div class="invalid-feedback">Please fillout your name.</div>
+			</div>
+			
+			<div class="mb-3">
+				<label for="email" class="form-label">Email:</label>
+				<input type="email" id="email" name="email" class="form-control" required>
+				<div class="invalid-feedback">Please fill out a valid email address.</div>
+			</div>
+			
+			<div class="mb-3">
+				<label for="message" class="form-label">Message:</label>
+				<textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>
+				<div class="invalid-feedback">Please fill out your message.</div>
+            </div>
+			
+			<button type="submit" class="btn btn-primary">Submit</button>
+		</form>
+	</div>
+	
+	<script src="(link unavailable)" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
